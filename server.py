@@ -36,10 +36,10 @@ async def handle_list_tools() -> list[Tool]:
 async def handle_call_tool(name: str, arguments: Any | None) -> list[types.TextContent | types.ImageContent | types.EmbeddedResource]:
     args = arguments or {}
     if name == "add_competitor":
-            _store.setdefault("competitors", []).append(args["name"])
-            return [TextContent(type="text", text=json.dumps({"status": "added"}, indent=2))]
-        if name == "list_competitors":
-            return [TextContent(type="text", text=json.dumps({"competitors": _store.get("competitors", [])}, indent=2))]
+        _store.setdefault("competitors", []).append(args["name"])
+        return [TextContent(type="text", text=json.dumps({"status": "added"}, indent=2))]
+    if name == "list_competitors":
+        return [TextContent(type="text", text=json.dumps({"competitors": _store.get("competitors", [])}, indent=2))]
     return [TextContent(type="text", text=json.dumps({"error": "Unknown tool"}, indent=2))]
 
 async def main():

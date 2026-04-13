@@ -1,0 +1,10 @@
+name: competitor-monitor-ai-mcp
+description: "MEOK AI Labs — Competitor Monitor tools for AI agents and LLMs"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/competitor-monitor-ai-mcp
+license: MIT
+categories: [Business Intelligence, Marketing]
+tags: [competitor-analysis, market-intelligence, competitive-research, business-intelligence]
+runtime: python
+entrypoint: server.py

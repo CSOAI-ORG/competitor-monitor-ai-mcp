@@ -29,7 +29,7 @@ def _rl(c="anon"):
 
 
 _store = {"competitors": {}, "mentions": [], "pricing": {}, "alerts": []}
-server = Server("competitor-monitor-ai-mcp")
+server = Server("competitor-monitor-ai")
 
 
 def create_id():
@@ -458,7 +458,7 @@ async def main():
             read_stream,
             write_stream,
             InitializationOptions(
-                server_name="competitor-monitor-ai-mcp",
+                server_name="competitor-monitor-ai",
                 server_version="0.1.0",
                 capabilities=server.get_capabilities(
                     notification_options=NotificationOptions(),

@@ -1,4 +1,37 @@
 name: competitor-monitor-ai-mcp
 description: MEOK AI Labs MCP Server
 version: 1.0.0
-tools: []
+tools:
+- name: add_competitor
+  description: Add competitor to monitor
+  parameters: []
+- name: get_competitor_info
+  description: Get competitor details
+  parameters: []
+- name: track_mention
+  description: Track a competitor mention
+  parameters: []
+- name: get_mentions
+  description: Get mentions for competitor
+  parameters: []
+- name: update_pricing
+  description: Update competitor pricing
+  parameters: []
+- name: get_pricing_history
+  description: Get competitor pricing history
+  parameters: []
+- name: set_alert
+  description: Set alert for competitor activity
+  parameters: []
+- name: get_alerts
+  description: Get active alerts
+  parameters: []
+- name: get_competitor_comparison
+  description: Compare competitors
+  parameters: []
+- name: get_market_share_estimate
+  description: Estimate market share
+  parameters: []
+- name: analyze_sentiment_trend
+  description: Analyze sentiment trends
+  parameters: []

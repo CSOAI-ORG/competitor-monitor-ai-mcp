@@ -1,5 +1,6 @@
 name: competitor-monitor-ai-mcp
-description: Comprehensive competitor intelligence and market monitoring.
+description: 'Competitor Monitor Ai MCP server. Tools: add competitor, get competitor
+  info, track mention. Built by MEOK AI Labs.'
 version: 1.0.0
 tools:
 - name: add_competitor

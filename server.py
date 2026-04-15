@@ -17,6 +17,17 @@ from mcp.server.stdio import stdio_server
 from mcp.types import Resource, Tool, TextContent
 import mcp.types as types
 
+from collections import defaultdict
+
+FREE_DAILY_LIMIT = 15
+_usage = defaultdict(list)
+def _rl(c="anon"):
+    now = datetime.now(timezone.utc)
+    _usage[c] = [t for t in _usage[c] if (now-t).total_seconds() < 86400]
+    if len(_usage[c]) >= FREE_DAILY_LIMIT: return json.dumps({"error": f"Limit {FREE_DAILY_LIMIT}/day"})
+    _usage[c].append(now); return None
+
+
 _store = {"competitors": {}, "mentions": [], "pricing": {}, "alerts": []}
 server = Server("competitor-monitor-ai-mcp")
 
@@ -173,6 +184,8 @@ async def handle_call_tool(name: str, arguments: Any = None) -> list[types.TextC
                 ),
             )
         ]
+    err = _rl()
+    if err: return [TextContent(type="text", text=err)]
 
     if name == "add_competitor":
         comp = {

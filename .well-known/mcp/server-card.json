@@ -1,0 +1,81 @@
+{
+  "name": "competitor-monitor-ai",
+  "description": "Comprehensive competitor intelligence and market monitoring.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/competitor-monitor-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "add_competitor",
+      "description": "Add competitor to monitor"
+    },
+    {
+      "name": "get_competitor_info",
+      "description": "Get competitor details"
+    },
+    {
+      "name": "track_mention",
+      "description": "Track a competitor mention"
+    },
+    {
+      "name": "get_mentions",
+      "description": "Get mentions for competitor"
+    },
+    {
+      "name": "update_pricing",
+      "description": "Update competitor pricing"
+    },
+    {
+      "name": "get_pricing_history",
+      "description": "Get competitor pricing history"
+    },
+    {
+      "name": "set_alert",
+      "description": "Set alert for competitor activity"
+    },
+    {
+      "name": "get_alerts",
+      "description": "Get active alerts"
+    },
+    {
+      "name": "get_competitor_comparison",
+      "description": "Compare competitors"
+    },
+    {
+      "name": "get_market_share_estimate",
+      "description": "Estimate market share"
+    },
+    {
+      "name": "analyze_sentiment_trend",
+      "description": "Analyze sentiment trends"
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "DevOps & Infrastructure"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}

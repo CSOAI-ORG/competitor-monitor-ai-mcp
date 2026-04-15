@@ -1,37 +1,109 @@
 name: competitor-monitor-ai-mcp
-description: MEOK AI Labs MCP Server
+description: Comprehensive competitor intelligence and market monitoring.
 version: 1.0.0
 tools:
 - name: add_competitor
   description: Add competitor to monitor
-  parameters: []
+  parameters:
+  - name: name
+    type: string
+    required: true
+  - name: website
+    type: string
+    required: false
+  - name: industry
+    type: string
+    required: false
 - name: get_competitor_info
   description: Get competitor details
-  parameters: []
+  parameters:
+  - name: competitor_id
+    type: string
+    required: true
 - name: track_mention
   description: Track a competitor mention
-  parameters: []
+  parameters:
+  - name: competitor_name
+    type: string
+    required: true
+  - name: source
+    type: string
+    required: false
+  - name: sentiment
+    type: string
+    required: false
+  - name: text
+    type: string
+    required: false
 - name: get_mentions
   description: Get mentions for competitor
-  parameters: []
+  parameters:
+  - name: competitor_name
+    type: string
+    required: false
+  - name: days
+    type: integer
+    required: false
+  - name: sentiment
+    type: string
+    required: false
 - name: update_pricing
   description: Update competitor pricing
-  parameters: []
+  parameters:
+  - name: competitor_name
+    type: string
+    required: true
+  - name: product
+    type: string
+    required: false
+  - name: price
+    type: number
+    required: false
+  - name: currency
+    type: string
+    required: false
 - name: get_pricing_history
   description: Get competitor pricing history
-  parameters: []
+  parameters:
+  - name: competitor_name
+    type: string
+    required: false
+  - name: product
+    type: string
+    required: false
 - name: set_alert
   description: Set alert for competitor activity
-  parameters: []
+  parameters:
+  - name: competitor_name
+    type: string
+    required: true
+  - name: alert_type
+    type: string
+    required: false
+  - name: condition
+    type: string
+    required: false
 - name: get_alerts
   description: Get active alerts
   parameters: []
 - name: get_competitor_comparison
   description: Compare competitors
-  parameters: []
+  parameters:
+  - name: competitors
+    type: array
+    required: false
 - name: get_market_share_estimate
   description: Estimate market share
-  parameters: []
+  parameters:
+  - name: industry
+    type: string
+    required: false
 - name: analyze_sentiment_trend
   description: Analyze sentiment trends
-  parameters: []
+  parameters:
+  - name: competitor_name
+    type: string
+    required: false
+  - name: days
+    type: integer
+    required: false

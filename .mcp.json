@@ -1,6 +1,6 @@
 {
   "name": "competitor-monitor-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Comprehensive competitor intelligence and market monitoring.",
   "version": "1.0.0",
   "tools": [
     {
@@ -8,8 +8,20 @@
       "description": "Add competitor to monitor",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "website": {
+            "type": "string"
+          },
+          "industry": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ]
       }
     },
     {
@@ -17,8 +29,14 @@
       "description": "Get competitor details",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "competitor_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "competitor_id"
+        ]
       }
     },
     {
@@ -26,8 +44,23 @@
       "description": "Track a competitor mention",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "competitor_name": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "sentiment": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "competitor_name"
+        ]
       }
     },
     {
@@ -35,7 +68,17 @@
       "description": "Get mentions for competitor",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "competitor_name": {
+            "type": "string"
+          },
+          "days": {
+            "type": "integer"
+          },
+          "sentiment": {
+            "type": "string"
+          }
+        },
         "required": []
       }
     },
@@ -44,8 +87,23 @@
       "description": "Update competitor pricing",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "competitor_name": {
+            "type": "string"
+          },
+          "product": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "currency": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "competitor_name"
+        ]
       }
     },
     {
@@ -53,7 +111,14 @@
       "description": "Get competitor pricing history",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "competitor_name": {
+            "type": "string"
+          },
+          "product": {
+            "type": "string"
+          }
+        },
         "required": []
       }
     },
@@ -62,8 +127,20 @@
       "description": "Set alert for competitor activity",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "competitor_name": {
+            "type": "string"
+          },
+          "alert_type": {
+            "type": "string"
+          },
+          "condition": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "competitor_name"
+        ]
       }
     },
     {
@@ -80,7 +157,11 @@
       "description": "Compare competitors",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "competitors": {
+            "type": "array"
+          }
+        },
         "required": []
       }
     },
@@ -89,7 +170,11 @@
       "description": "Estimate market share",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "industry": {
+            "type": "string"
+          }
+        },
         "required": []
       }
     },
@@ -98,7 +183,14 @@
       "description": "Analyze sentiment trends",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "competitor_name": {
+            "type": "string"
+          },
+          "days": {
+            "type": "integer"
+          }
+        },
         "required": []
       }
     }

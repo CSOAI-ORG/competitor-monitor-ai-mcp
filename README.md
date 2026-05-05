@@ -1,102 +1,38 @@
-# Competitor Monitor AI MCP Server
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Comprehensive competitor intelligence, pricing tracking, and market monitoring
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/competitor-monitor-ai-mcp)](https://github.com/CSOAI-ORG/competitor-monitor-ai-mcp/stargazers)
+
+# ucompetitorU monitorU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/competitor-monitor-ai-mcp)](https://www.npmjs.com/package/@meok-ai/competitor-monitor-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/competitor-monitor-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install competitor-monitor-ai-mcp
+# or
+npm install -g @meok-ai/competitor-monitor-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-### `add_competitor`
-Add a competitor to monitor.
-
-**Parameters:**
-- `name` (str): Competitor name
-- `website` (str): Website URL
-- `industry` (str): Industry
-
-### `get_competitor_info`
-Get competitor details.
-
-**Parameters:**
-- `competitor_id` (str): Competitor identifier
-
-### `track_mention`
-Track a competitor mention with sentiment.
-
-**Parameters:**
-- `competitor_name` (str): Competitor name
-- `source` (str): Mention source
-- `sentiment` (str): Sentiment — 'positive', 'negative', 'neutral'
-- `text` (str): Mention text
-
-### `get_mentions`
-Get mentions filtered by competitor, timeframe, and sentiment.
-
-**Parameters:**
-- `competitor_name` (str): Competitor name
-- `days` (int): Lookback days (default 30)
-- `sentiment` (str): Sentiment filter
-
-### `update_pricing`
-Update competitor pricing data.
-
-**Parameters:**
-- `competitor_name` (str): Competitor name
-- `product` (str): Product name
-- `price` (float): Price
-- `currency` (str): Currency (default 'USD')
-
-### `get_pricing_history`
-Get competitor pricing history with trend analysis.
-
-**Parameters:**
-- `competitor_name` (str): Competitor name
-- `product` (str): Product name
-
-### `set_alert`
-Set alert for competitor activity.
-
-**Parameters:**
-- `competitor_name` (str): Competitor name
-- `alert_type` (str): Alert type (default 'mention')
-- `condition` (str): Alert condition
-
-### `get_alerts`
-Get all active alerts.
-
-### `get_competitor_comparison`
-Compare multiple competitors side by side.
-
-**Parameters:**
-- `competitors` (list): List of competitor names
-
-### `get_market_share_estimate`
-Estimate market share for an industry.
-
-**Parameters:**
-- `industry` (str): Industry name
-
-### `analyze_sentiment_trend`
-Analyze sentiment trends for a competitor over time.
-
-**Parameters:**
-- `competitor_name` (str): Competitor name
-- `days` (int): Lookback days (default 30)
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)

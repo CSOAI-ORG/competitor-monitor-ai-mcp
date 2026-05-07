@@ -48,6 +48,13 @@ def add_competitor(name: str, website: str = "", industry: str = "", api_key: st
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        name (str): The name to analyze or process.
+        website (str): The website to analyze or process.
+        industry (str): The industry to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -100,6 +107,11 @@ def get_competitor_info(competitor_id: str, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        competitor_id (str): The competitor id to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -144,6 +156,14 @@ def track_mention(competitor_name: str, source: str = "manual", sentiment: str =
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        competitor_name (str): The competitor name to analyze or process.
+        source (str): The source to analyze or process.
+        sentiment (str): The sentiment to analyze or process.
+        text (str): The text to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -199,6 +219,13 @@ def get_mentions(competitor_name: str = "", days: int = 30, sentiment: str = "",
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        competitor_name (str): The competitor name to analyze or process.
+        days (int): The days to analyze or process.
+        sentiment (str): The sentiment to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -251,6 +278,14 @@ def update_pricing(competitor_name: str, product: str = "", price: float = 0, cu
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        competitor_name (str): The competitor name to analyze or process.
+        product (str): The product to analyze or process.
+        price (float): The price to analyze or process.
+        currency (str): The currency to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -307,6 +342,12 @@ def get_pricing_history(competitor_name: str = "", product: str = "", api_key: s
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        competitor_name (str): The competitor name to analyze or process.
+        product (str): The product to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -365,6 +406,13 @@ def set_alert(competitor_name: str, alert_type: str = "mention", condition: str 
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        competitor_name (str): The competitor name to analyze or process.
+        alert_type (str): The alert type to analyze or process.
+        condition (str): The condition to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -416,6 +464,10 @@ def get_alerts(api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -458,6 +510,11 @@ def get_competitor_comparison(competitors: list = None, api_key: str = "") -> st
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        competitors (list): The competitors to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -517,6 +574,11 @@ def get_market_share_estimate(industry: str = "", api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        industry (str): The industry to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -571,6 +633,12 @@ def analyze_sentiment_trend(competitor_name: str = "", days: int = 30, api_key: 
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        competitor_name (str): The competitor name to analyze or process.
+        days (int): The days to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned

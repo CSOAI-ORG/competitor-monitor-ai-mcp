@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""MEOK AI Labs — competitor-monitor-ai-mcp MCP Server. Comprehensive competitor intelligence and market monitoring."""
+"""
+Buy Pro: https://www.csoai.org/checkout
+MEOK AI Labs — competitor-monitor-ai-mcp MCP Server. Comprehensive competitor intelligence and market monitoring."""
 
 import json
 from datetime import datetime, timedelta, timezone
@@ -8,7 +10,6 @@ import uuid
 import random
 import sys, os
 
-sys.path.insert(0, os.path.expanduser("~/clawd/meok-labs-engine/shared"))
 from auth_middleware import check_access
 from mcp.server.fastmcp import FastMCP
 from collections import defaultdict
@@ -72,7 +73,7 @@ def add_competitor(name: str, website: str = "", industry: str = "", api_key: st
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     comp = {
@@ -129,7 +130,7 @@ def get_competitor_info(competitor_id: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     comp = _store["competitors"].get(competitor_id)
@@ -181,7 +182,7 @@ def track_mention(competitor_name: str, source: str = "manual", sentiment: str =
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     mention = {
@@ -243,7 +244,7 @@ def get_mentions(competitor_name: str = "", days: int = 30, sentiment: str = "",
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     cutoff = datetime.now() - timedelta(days=days)
@@ -303,7 +304,7 @@ def update_pricing(competitor_name: str, product: str = "", price: float = 0, cu
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     key = f"{competitor_name}:{product}"
@@ -365,7 +366,7 @@ def get_pricing_history(competitor_name: str = "", product: str = "", api_key: s
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     key = f"{competitor_name}:{product}"
@@ -430,7 +431,7 @@ def set_alert(competitor_name: str, alert_type: str = "mention", condition: str 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     alert = {
@@ -485,7 +486,7 @@ def get_alerts(api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     active = [a for a in _store["alerts"] if not a.get("triggered")]
@@ -532,7 +533,7 @@ def get_competitor_comparison(competitors: list = None, api_key: str = "") -> st
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     comps = competitors or []
@@ -596,7 +597,7 @@ def get_market_share_estimate(industry: str = "", api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     total = sum(
@@ -656,7 +657,7 @@ def analyze_sentiment_trend(competitor_name: str = "", days: int = 30, api_key: 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     mentions = [
@@ -685,5 +686,8 @@ def analyze_sentiment_trend(competitor_name: str = "", days: int = 30, api_key: 
     )
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

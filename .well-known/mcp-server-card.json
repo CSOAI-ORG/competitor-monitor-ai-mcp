@@ -1,0 +1,46 @@
+{
+  "name": "competitor-monitor-ai-mcp",
+  "title": "Competitor Monitor Ai Mcp",
+  "description": "Competitor Monitor Ai MCP server. Tools: add competitor, get competitor info, track mention. Built by MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "add_competitor"
+    },
+    {
+      "name": "get_competitor_info"
+    },
+    {
+      "name": "track_mention"
+    },
+    {
+      "name": "get_mentions"
+    },
+    {
+      "name": "update_pricing"
+    },
+    {
+      "name": "get_pricing_history"
+    },
+    {
+      "name": "set_alert"
+    },
+    {
+      "name": "get_alerts"
+    },
+    {
+      "name": "get_competitor_comparison"
+    },
+    {
+      "name": "get_market_share_estimate"
+    },
+    {
+      "name": "analyze_sentiment_trend"
+    }
+  ]
+}

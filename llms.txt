@@ -1,38 +1,54 @@
-# Competitor Monitor Ai MCP
-
-> Comprehensive competitor intelligence and market monitoring
-
-`competitor-monitor-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+# competitor-monitor-ai-mcp
+# **MCP server for competitor monitor ai mcp operations**
 
 ## Install
-
 ```bash
 pip install competitor-monitor-ai-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx competitor-monitor-ai-mcp
-```
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
 
 ## Tools
 
-- `add_competitor` — Add competitor to monitor
-- `get_competitor_info` — Get competitor details
-- `track_mention` — Track a competitor mention
-- `get_mentions` — Get mentions for competitor
-- `update_pricing` — Update competitor pricing
-- `get_pricing_history` — Get competitor pricing history
-- `set_alert` — Set alert for competitor activity
-- `get_alerts` — Get active alerts
-- `get_competitor_comparison` — Compare competitors
-- `get_market_share_estimate` — Estimate market share
-- `analyze_sentiment_trend` — Analyze sentiment trends
+### `add_competitor`
+Add competitor to monitor
 
-## Links
+### `get_competitor_info`
+Get competitor details
 
-- Source: https://github.com/CSOAI-ORG/competitor-monitor-ai-mcp
-- PyPI: https://pypi.org/project/competitor-monitor-ai-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+### `track_mention`
+Track a competitor mention
+
+### `get_mentions`
+Get mentions for competitor
+
+### `update_pricing`
+Update competitor pricing
+
+### `get_pricing_history`
+Get competitor pricing history
+
+### `set_alert`
+Set alert for competitor activity
+
+### `get_alerts`
+Get active alerts
+
+### `get_competitor_comparison`
+Compare competitors
+
+### `get_market_share_estimate`
+Estimate market share
+
+### `analyze_sentiment_trend`
+Analyze sentiment trends
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

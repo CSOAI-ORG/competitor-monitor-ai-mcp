@@ -1,0 +1,9 @@
+# competitor-monitor-ai-mcp - Auto-trigger Rules
+
+When the user asks about competitor monitor, use competitor-monitor-ai-mcp tools: add_competitor, get_competitor_info, track_mention, get_mentions, update_pricing
+
+**MCP server for competitor monitor ai mcp operations**
+
+Install: `pip install competitor-monitor-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """
-Buy Pro: https://www.csoai.org/checkout
 MEOK AI Labs — competitor-monitor-ai-mcp MCP Server. Comprehensive competitor intelligence and market monitoring."""
 
 import json

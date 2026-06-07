@@ -1,0 +1,29 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "competitor-monitor-ai-mcp",
+    "description": "Competitor Monitor Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "competitor-monitor-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "add_competitor",
+      "get_competitor_info",
+      "track_mention",
+      "get_mentions",
+      "update_pricing",
+      "get_pricing_history",
+      "set_alert",
+      "get_alerts",
+      "get_competitor_comparison",
+      "get_market_share_estimate",
+      "analyze_sentiment_trend"
+    ]
+  }
+}

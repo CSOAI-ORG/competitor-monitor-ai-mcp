@@ -1,0 +1,122 @@
+{
+  "name": "competitor-monitor-ai-mcp",
+  "description": "Competitor Monitor Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/competitor-monitor-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "add_competitor",
+      "name": "Add Competitor",
+      "description": "add_competitor via competitor-monitor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_competitor_info",
+      "name": "Get Competitor Info",
+      "description": "get_competitor_info via competitor-monitor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "track_mention",
+      "name": "Track Mention",
+      "description": "track_mention via competitor-monitor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_mentions",
+      "name": "Get Mentions",
+      "description": "get_mentions via competitor-monitor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "update_pricing",
+      "name": "Update Pricing",
+      "description": "update_pricing via competitor-monitor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_pricing_history",
+      "name": "Get Pricing History",
+      "description": "get_pricing_history via competitor-monitor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "set_alert",
+      "name": "Set Alert",
+      "description": "set_alert via competitor-monitor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_alerts",
+      "name": "Get Alerts",
+      "description": "get_alerts via competitor-monitor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_competitor_comparison",
+      "name": "Get Competitor Comparison",
+      "description": "get_competitor_comparison via competitor-monitor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_market_share_estimate",
+      "name": "Get Market Share Estimate",
+      "description": "get_market_share_estimate via competitor-monitor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "analyze_sentiment_trend",
+      "name": "Analyze Sentiment Trend",
+      "description": "analyze_sentiment_trend via competitor-monitor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

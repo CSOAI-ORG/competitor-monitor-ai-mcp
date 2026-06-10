@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "competitor-monitor-ai-mcp"
-version = "1.0.6"
+version = "1.0.9"
 readme = "README.md"
 description = "Competitor Monitor Ai MCP server. Tools: add competitor, get competitor info, track mention. Built by MEOK AI Labs."
 license = {file = "LICENSE"}

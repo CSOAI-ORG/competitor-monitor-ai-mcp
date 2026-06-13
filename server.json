@@ -4,9 +4,8 @@
   "version": "1.0.9",
   "description": "Competitor Monitor Ai MCP Server by MEOK AI Labs",
   "repository": {
-    "type": "git",
     "url": "https://github.com/CSOAI-ORG/competitor-monitor-ai-mcp",
-    "source": "https://github.com/CSOAI-ORG/competitor-monitor-ai-mcp"
+    "source": "github"
   },
   "packages": [
     {

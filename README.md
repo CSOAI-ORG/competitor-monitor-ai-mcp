@@ -113,3 +113,28 @@ Free tier: 10 calls/day per MCP. Pro tier (£79/mo): unlimited + cryptographical
 
 <!-- BUY-LADDER:END -->
 
+
+
+## Configuration
+
+Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "competitor-monitor-ai-mcp": {
+      "command": "uvx",
+      "args": ["competitor-monitor-ai-mcp"]
+    }
+  }
+}
+```
+
+Or: `pip install competitor-monitor-ai-mcp` then run the `competitor-monitor-ai-mcp` command (stdio transport).
+
+## Examples
+
+Once configured, ask your assistant, for example:
+- "Use `add_competitor` to …"
+- "Use `get_competitor_info` to …"
+- "Use `track_mention` to …"
